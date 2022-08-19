@@ -32,8 +32,7 @@ const Navigation = () => {
               component={LoginScreen}
               options={{headerShown: false}}
             />          
-          </>
-          
+          </>         
         )}
          <Stack.Screen
               name="Scanner"
