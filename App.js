@@ -1,27 +1,16 @@
-import React from "react";
+import React from 'react';
+import {StatusBar} from 'react-native';
+import Navigation from './components/Navigation';
+import {AuthProvider} from './context/AuthContext';
 
-import Scanner from "./screens/Scanner";
-import Home from "./screens/Home";
-
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-
-const Stack = createStackNavigator();
-
-function App() {
+const App = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Scanner" component={Scanner} />
-    </Stack.Navigator>
-
+    <AuthProvider>
+      <StatusBar backgroundColor="#06bcee" />
+      <Navigation />
+    </AuthProvider>
   );
-}
+};
 
-export default () => {
-  return(
-    <NavigationContainer>
-      <App/>
-    </NavigationContainer>
-  )
-}
+export default App;
+

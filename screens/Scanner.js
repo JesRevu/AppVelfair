@@ -17,7 +17,6 @@ export default function Scanner(){
     const handleBarCodeScanned = ({ type, data}) => {
         setScanned(true);
         setId(data);
-        /*alert(`Qr Code With Type ${type} and data ${Linking.openURL(`${data}`)} has been scanned`);*/
     };
 
     if(hasPermission === null) {
