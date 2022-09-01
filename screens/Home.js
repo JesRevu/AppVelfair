@@ -8,7 +8,8 @@ export default function Home() {
 
     return(
         <View style={StyleSheet.container}>
-            <Button title='Scan' onPress={() => navigation.navigate('Scanner')} />
+            <Button title='ScanQR' onPress={() => navigation.navigate('Scanner')} />
+            <Button title='ScanCodigo' onPress={() => navigation.navigate('Codigo')} />
         </View>
     );
 }

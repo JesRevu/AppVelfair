@@ -8,6 +8,7 @@ import LoginScreen from '../screens/Login';
 import {AuthContext} from '../context/AuthContext';
 import SplashScreen from '../screens/SplashScreen';
 import Scanner from '../screens/Scanner';
+import Codigo from '../screens/Codigo';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +40,11 @@ const Navigation = () => {
               component={Scanner}
               options={{headerShown: false}}
             /> 
+             <Stack.Screen
+              name="Codigo"
+              component={Codigo}
+              options={{headerShown: false}}
+            />
       </Stack.Navigator>
     </NavigationContainer>
   );
